@@ -51,7 +51,7 @@
     "test": "jest"
   },
   "jest": {
-    "setupFilesAfterEnv": [
+    "setupFiles": [
       "<rootDir>/test/jest-setup.ts"
     ],
     "testMatch": [
