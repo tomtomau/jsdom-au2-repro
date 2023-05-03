@@ -1,6 +1,5 @@
 import { Foo } from '../src/foo';
 import { render } from './helper';
-
 describe('foo component', () => {
   it.each([
     ['#optionA'],

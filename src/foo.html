@@ -1,18 +1,22 @@
+<!-- ✅ Passes test, but not practical (hardcoded value) - just for debugging -->
 <div>
     <p>This uses a hardcoded string, so it sets the value initially, but it won't have two way binding. It's mostly here for debugging.</p>
     <input id="optionA" type="text" value="Hello World!">
 </div>
 
+<!-- ❌ Fails test -->
 <div>
     <p>This one sets the value in the browser, but in tests it returns empty string?</p>
     <input id="optionB" type="text" value.bind="value">
 </div>
 
+<!-- ❌ Fails test -->
 <div>
     <p>This one doesn't get the value bound in the browser (?) and doesn't get set in tests.</p>
     <input id="optionC" type="text" value.bind>
 </div>
 
+<!-- ✅ Passes test, but not practical (no two-way binding) -->
 <div>
     <p>This use string interpolation, so it won't have two way binding. The tests pass because it sets the value initially though. It's mostly here for debugging.</p>
     <input id="optionD" type="text" value="${value}">
